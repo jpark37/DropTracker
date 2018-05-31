@@ -52,6 +52,15 @@ namespace DropTracker
             UpdateUI();
         }
 
+        private void fullResetButton_Click(object sender, EventArgs e)
+        {
+            m_globalCount = 0;
+            m_streakCount = 0;
+            m_fairyCount = 0;
+
+            UpdateUI();
+        }
+
         private void DoKills(int count)
         {
             m_globalCount = (m_globalCount + count) % 10;
@@ -454,6 +463,14 @@ namespace DropTracker
         private void slaveButton8_Click(object sender, EventArgs e)
         {
             DoSlave(8);
+        }
+
+        private void killForceButton_Click(object sender, EventArgs e)
+        {
+            m_globalCount = (m_globalCount + 1) % 10;
+            m_streakCount = 0;
+            m_fairyCount = null;
+            UpdateUI();
         }
 
         private static Bitmap[] GlobalDropImages =
