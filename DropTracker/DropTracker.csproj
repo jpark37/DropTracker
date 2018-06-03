@@ -67,7 +67,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Data\rczelda.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -77,11 +79,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="rczelda.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Data\0.png" />
+    <None Include="Data\1.png" />
+    <None Include="Data\2.png" />
+    <None Include="Data\3.png" />
+    <None Include="Data\4.png" />
+    <None Include="Data\5.png" />
+    <None Include="Data\6.png" />
+    <None Include="Data\7.png" />
+    <None Include="Data\8.png" />
+    <None Include="Data\9.png" />
     <Content Include="vanilla_tracker_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

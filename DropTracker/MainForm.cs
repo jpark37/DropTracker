@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing.Text;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace DropTracker
@@ -16,8 +12,40 @@ namespace DropTracker
         {
             InitializeComponent();
 
+            InitializeZeldaFont();
+
             UpdateUI();
         }
+
+        private void InitializeZeldaFont()
+        {
+            PrivateFontCollection fontCollection = new PrivateFontCollection();
+            int length = Properties.Resources.RCZeldaFont.Length;
+            IntPtr memory = Marshal.AllocCoTaskMem(length);
+            Marshal.Copy(Properties.Resources.RCZeldaFont, 0, memory, length);
+            fontCollection.AddMemoryFont(memory, length);
+            uint fontCount = 0;
+            AddFontMemResourceEx(memory, (uint)length, IntPtr.Zero, ref fontCount);
+
+            Font headerFont = new Font(fontCollection.Families[0], 20);
+            globalHeaderLabel.Font = headerFont;
+            streakHeaderLabel.Font = headerFont;
+            fairyHeaderLabel.Font = headerFont;
+
+            Font numberFont = new Font(fontCollection.Families[0], 72);
+            globalLabel.Font = numberFont;
+            streakLabel.Font = numberFont;
+            fairyLabel.Font = numberFont;
+
+            Font groupFont = new Font(fontCollection.Families[0], 32);
+            groupLabelP.Font = groupFont;
+            groupLabelB.Font = groupFont;
+            groupLabelR.Font = groupFont;
+            groupLabelH.Font = groupFont;
+        }
+
+        [DllImport("gdi32.dll")]
+        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont, IntPtr pdv, [In] ref uint pcFonts);
 
         private void UpdateUI()
         {
@@ -475,16 +503,16 @@ namespace DropTracker
 
         private static Bitmap[] GlobalDropImages =
         {
-            new Bitmap("0.png"),
-            new Bitmap("1.png"),
-            new Bitmap("2.png"),
-            new Bitmap("3.png"),
-            new Bitmap("4.png"),
-            new Bitmap("5.png"),
-            new Bitmap("6.png"),
-            new Bitmap("7.png"),
-            new Bitmap("8.png"),
-            new Bitmap("9.png"),
+            Properties.Resources.Items0,
+            Properties.Resources.Items1,
+            Properties.Resources.Items2,
+            Properties.Resources.Items3,
+            Properties.Resources.Items4,
+            Properties.Resources.Items5,
+            Properties.Resources.Items6,
+            Properties.Resources.Items7,
+            Properties.Resources.Items8,
+            Properties.Resources.Items9,
         };
 
         private int m_globalCount;

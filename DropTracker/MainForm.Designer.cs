@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.streakHeaderLabel = new System.Windows.Forms.Label();
+            this.globalHeaderLabel = new System.Windows.Forms.Label();
+            this.fairyHeaderLabel = new System.Windows.Forms.Label();
             this.streakLabel = new System.Windows.Forms.Label();
             this.globalLabel = new System.Windows.Forms.Label();
             this.fairyLabel = new System.Windows.Forms.Label();
@@ -76,10 +76,10 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox0 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.groupLabelP = new System.Windows.Forms.Label();
+            this.groupLabelB = new System.Windows.Forms.Label();
+            this.groupLabelR = new System.Windows.Forms.Label();
+            this.groupLabelH = new System.Windows.Forms.Label();
             this.slaveButton = new System.Windows.Forms.Button();
             this.killButton8 = new System.Windows.Forms.Button();
             this.killButton7 = new System.Windows.Forms.Button();
@@ -124,42 +124,42 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox0)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // streakHeaderLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("rczelda", 20F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(341, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Streak";
+            this.streakHeaderLabel.AutoSize = true;
+            this.streakHeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.streakHeaderLabel.ForeColor = System.Drawing.Color.White;
+            this.streakHeaderLabel.Location = new System.Drawing.Point(341, 75);
+            this.streakHeaderLabel.Name = "streakHeaderLabel";
+            this.streakHeaderLabel.Size = new System.Drawing.Size(93, 31);
+            this.streakHeaderLabel.TabIndex = 1;
+            this.streakHeaderLabel.Text = "Streak";
             // 
-            // label2
+            // globalHeaderLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("rczelda", 20F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(139, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 21);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Global";
+            this.globalHeaderLabel.AutoSize = true;
+            this.globalHeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.globalHeaderLabel.ForeColor = System.Drawing.Color.White;
+            this.globalHeaderLabel.Location = new System.Drawing.Point(139, 75);
+            this.globalHeaderLabel.Name = "globalHeaderLabel";
+            this.globalHeaderLabel.Size = new System.Drawing.Size(92, 31);
+            this.globalHeaderLabel.TabIndex = 0;
+            this.globalHeaderLabel.Text = "Global";
             // 
-            // label3
+            // fairyHeaderLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("rczelda", 20F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(555, 75);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 21);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Fairy";
+            this.fairyHeaderLabel.AutoSize = true;
+            this.fairyHeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.fairyHeaderLabel.ForeColor = System.Drawing.Color.White;
+            this.fairyHeaderLabel.Location = new System.Drawing.Point(555, 75);
+            this.fairyHeaderLabel.Name = "fairyHeaderLabel";
+            this.fairyHeaderLabel.Size = new System.Drawing.Size(75, 31);
+            this.fairyHeaderLabel.TabIndex = 2;
+            this.fairyHeaderLabel.Text = "Fairy";
             // 
             // streakLabel
             // 
-            this.streakLabel.Font = new System.Drawing.Font("rczelda", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.streakLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.streakLabel.ForeColor = System.Drawing.Color.White;
             this.streakLabel.Location = new System.Drawing.Point(315, 112);
             this.streakLabel.Name = "streakLabel";
@@ -171,17 +171,17 @@
             // globalLabel
             // 
             this.globalLabel.AutoSize = true;
-            this.globalLabel.Font = new System.Drawing.Font("rczelda", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.globalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.globalLabel.ForeColor = System.Drawing.Color.White;
             this.globalLabel.Location = new System.Drawing.Point(159, 112);
             this.globalLabel.Name = "globalLabel";
-            this.globalLabel.Size = new System.Drawing.Size(128, 74);
+            this.globalLabel.Size = new System.Drawing.Size(98, 108);
             this.globalLabel.TabIndex = 3;
             this.globalLabel.Text = "0";
             // 
             // fairyLabel
             // 
-            this.fairyLabel.Font = new System.Drawing.Font("rczelda", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fairyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fairyLabel.ForeColor = System.Drawing.Color.White;
             this.fairyLabel.Location = new System.Drawing.Point(517, 112);
             this.fairyLabel.Name = "fairyLabel";
@@ -621,49 +621,49 @@
             this.pictureBox0.TabIndex = 54;
             this.pictureBox0.TabStop = false;
             // 
-            // label4
+            // groupLabelP
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("rczelda", 32F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(14, 225);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 33);
-            this.label4.TabIndex = 56;
-            this.label4.Text = "P";
+            this.groupLabelP.AutoSize = true;
+            this.groupLabelP.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F);
+            this.groupLabelP.ForeColor = System.Drawing.Color.White;
+            this.groupLabelP.Location = new System.Drawing.Point(14, 225);
+            this.groupLabelP.Name = "groupLabelP";
+            this.groupLabelP.Size = new System.Drawing.Size(51, 51);
+            this.groupLabelP.TabIndex = 56;
+            this.groupLabelP.Text = "P";
             // 
-            // label5
+            // groupLabelB
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("rczelda", 32F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(14, 289);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 33);
-            this.label5.TabIndex = 57;
-            this.label5.Text = "B";
+            this.groupLabelB.AutoSize = true;
+            this.groupLabelB.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F);
+            this.groupLabelB.ForeColor = System.Drawing.Color.White;
+            this.groupLabelB.Location = new System.Drawing.Point(14, 289);
+            this.groupLabelB.Name = "groupLabelB";
+            this.groupLabelB.Size = new System.Drawing.Size(51, 51);
+            this.groupLabelB.TabIndex = 57;
+            this.groupLabelB.Text = "B";
             // 
-            // label6
+            // groupLabelR
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("rczelda", 32F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(14, 350);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 33);
-            this.label6.TabIndex = 58;
-            this.label6.Text = "R";
+            this.groupLabelR.AutoSize = true;
+            this.groupLabelR.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F);
+            this.groupLabelR.ForeColor = System.Drawing.Color.White;
+            this.groupLabelR.Location = new System.Drawing.Point(14, 350);
+            this.groupLabelR.Name = "groupLabelR";
+            this.groupLabelR.Size = new System.Drawing.Size(53, 51);
+            this.groupLabelR.TabIndex = 58;
+            this.groupLabelR.Text = "R";
             // 
-            // label7
+            // groupLabelH
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("rczelda", 32F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(14, 414);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 33);
-            this.label7.TabIndex = 59;
-            this.label7.Text = "H";
+            this.groupLabelH.AutoSize = true;
+            this.groupLabelH.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F);
+            this.groupLabelH.ForeColor = System.Drawing.Color.White;
+            this.groupLabelH.Location = new System.Drawing.Point(14, 414);
+            this.groupLabelH.Name = "groupLabelH";
+            this.groupLabelH.Size = new System.Drawing.Size(53, 51);
+            this.groupLabelH.TabIndex = 59;
+            this.groupLabelH.Text = "H";
             // 
             // slaveButton
             // 
@@ -1055,10 +1055,10 @@
             this.Controls.Add(this.killButton3);
             this.Controls.Add(this.killButton2);
             this.Controls.Add(this.slaveButton);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.groupLabelH);
+            this.Controls.Add(this.groupLabelR);
+            this.Controls.Add(this.groupLabelB);
+            this.Controls.Add(this.groupLabelP);
             this.Controls.Add(this.pictureBox0);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
@@ -1103,9 +1103,9 @@
             this.Controls.Add(this.fairyLabel);
             this.Controls.Add(this.globalLabel);
             this.Controls.Add(this.streakLabel);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.fairyHeaderLabel);
+            this.Controls.Add(this.globalHeaderLabel);
+            this.Controls.Add(this.streakHeaderLabel);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1128,9 +1128,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label streakHeaderLabel;
+        private System.Windows.Forms.Label globalHeaderLabel;
+        private System.Windows.Forms.Label fairyHeaderLabel;
         private System.Windows.Forms.Label streakLabel;
         private System.Windows.Forms.Label globalLabel;
         private System.Windows.Forms.Label fairyLabel;
@@ -1175,10 +1175,10 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox0;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label groupLabelP;
+        private System.Windows.Forms.Label groupLabelB;
+        private System.Windows.Forms.Label groupLabelR;
+        private System.Windows.Forms.Label groupLabelH;
         private System.Windows.Forms.Button slaveButton;
         private System.Windows.Forms.Button killButton8;
         private System.Windows.Forms.Button killButton7;
