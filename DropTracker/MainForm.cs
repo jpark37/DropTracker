@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DropTracker.Properties;
+using System;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Runtime.InteropServices;
@@ -12,63 +13,28 @@ namespace DropTracker
         {
             InitializeComponent();
 
-            InitializeZeldaFont();
-
             UpdateUI();
         }
 
-        private void InitializeZeldaFont()
-        {
-            PrivateFontCollection fontCollection = new PrivateFontCollection();
-            int length = Properties.Resources.RCZeldaFont.Length;
-            IntPtr memory = Marshal.AllocCoTaskMem(length);
-            Marshal.Copy(Properties.Resources.RCZeldaFont, 0, memory, length);
-            fontCollection.AddMemoryFont(memory, length);
-            uint fontCount = 0;
-            AddFontMemResourceEx(memory, (uint)length, IntPtr.Zero, ref fontCount);
-
-            Font headerFont = new Font(fontCollection.Families[0], 20);
-            globalHeaderLabel.Font = headerFont;
-            streakHeaderLabel.Font = headerFont;
-            fairyHeaderLabel.Font = headerFont;
-
-            Font numberFont = new Font(fontCollection.Families[0], 72);
-            globalLabel.Font = numberFont;
-            streakLabel.Font = numberFont;
-            fairyLabel.Font = numberFont;
-
-            Font groupFont = new Font(fontCollection.Families[0], 32);
-            groupLabelP.Font = groupFont;
-            groupLabelB.Font = groupFont;
-            groupLabelR.Font = groupFont;
-            groupLabelH.Font = groupFont;
-        }
-
-        [DllImport("gdi32.dll")]
-        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont, IntPtr pdv, [In] ref uint pcFonts);
-
         private void UpdateUI()
         {
-            globalLabel.Text = m_globalCount.ToString();
-            streakLabel.Text = m_streakCount.ToString();
-            fairyLabel.Text = m_fairyCount.HasValue ? m_fairyCount.Value.ToString() : "X";
+            pictureBoxGlobalCount.Image = CountImages[m_globalCount];
+            pictureBoxStreakCount.Image = CountImages[m_streakCount];
+            pictureBoxFairyCount.Image = m_fairyCount.HasValue ? CountImages[m_fairyCount.Value] : Resources.CountX;
 
-            PictureBox[] pictureBoxes = new PictureBox[]
+            PictureBox[,] pictureBoxes = new PictureBox[,]
             {
-                pictureBox0,
-                pictureBox1,
-                pictureBox2,
-                pictureBox3,
-                pictureBox4,
-                pictureBox5,
-                pictureBox6,
-                pictureBox7,
-                pictureBox8,
-                pictureBox9,
+                { pictureBox00, pictureBox01, pictureBox02, pictureBox03, pictureBox04, pictureBox05, pictureBox06, pictureBox07, pictureBox08, pictureBox09, },
+                { pictureBox10, pictureBox11, pictureBox12, pictureBox13, pictureBox14, pictureBox15, pictureBox16, pictureBox17, pictureBox18, pictureBox19, },
+                { pictureBox20, pictureBox21, pictureBox22, pictureBox23, pictureBox24, pictureBox25, pictureBox26, pictureBox27, pictureBox28, pictureBox29, },
+                { pictureBox30, pictureBox31, pictureBox32, pictureBox33, pictureBox34, pictureBox35, pictureBox36, pictureBox37, pictureBox38, pictureBox39, },
             };
-            for (int index = 0; index < 10; ++index)
+            for (int outerIndex = 0; outerIndex < 4; ++outerIndex)
             {
-                pictureBoxes[index].Image = GlobalDropImages[(m_globalCount + index + 1) % 10];
+                for (int innerIndex = 0; innerIndex < 10; ++innerIndex)
+                {
+                    pictureBoxes[outerIndex, innerIndex].Image = GlobalDropImages[outerIndex, (m_globalCount + innerIndex + 1) % 10];
+                }
             }
         }
 
@@ -501,18 +467,32 @@ namespace DropTracker
             UpdateUI();
         }
 
-        private static Bitmap[] GlobalDropImages =
+        private static Bitmap[,] GlobalDropImages =
         {
-            Properties.Resources.Items0,
-            Properties.Resources.Items1,
-            Properties.Resources.Items2,
-            Properties.Resources.Items3,
-            Properties.Resources.Items4,
-            Properties.Resources.Items5,
-            Properties.Resources.Items6,
-            Properties.Resources.Items7,
-            Properties.Resources.Items8,
-            Properties.Resources.Items9,
+            { Resources.Heart, Resources.Rupee, Resources.Heart, Resources.Rupee, Resources.Fairy, Resources.Rupee, Resources.Heart, Resources.Heart, Resources.Rupee, Resources.Rupee, },
+            { Resources.Heart, Resources.Bomb, Resources.Rupee, Resources.Clock, Resources.Rupee, Resources.Heart, Resources.Bomb, Resources.Rupee, Resources.Bomb, Resources.Heart, },
+            { Resources.FiveRupee, Resources.Rupee, Resources.Heart, Resources.Rupee, Resources.FiveRupee, Resources.Heart, Resources.Clock, Resources.Rupee, Resources.Rupee, Resources.Rupee, },
+            { Resources.Heart, Resources.Heart, Resources.Fairy, Resources.Rupee, Resources.Heart, Resources.Fairy, Resources.Heart, Resources.Heart, Resources.Heart, Resources.Rupee, },
+        };
+
+        private static Bitmap[] CountImages =
+        {
+            Resources.Count0,
+            Resources.Count1,
+            Resources.Count2,
+            Resources.Count3,
+            Resources.Count4,
+            Resources.Count5,
+            Resources.Count6,
+            Resources.Count7,
+            Resources.Count8,
+            Resources.Count9,
+            Resources.Count10,
+            Resources.Count11,
+            Resources.Count12,
+            Resources.Count13,
+            Resources.Count14,
+            Resources.Count15,
         };
 
         private int m_globalCount;

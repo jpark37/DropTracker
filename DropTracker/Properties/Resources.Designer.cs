@@ -63,9 +63,9 @@ namespace DropTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Items0 {
+        internal static System.Drawing.Bitmap Bomb {
             get {
-                object obj = ResourceManager.GetObject("Items0", resourceCulture);
+                object obj = ResourceManager.GetObject("Bomb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace DropTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Items1 {
+        internal static System.Drawing.Bitmap Clock {
             get {
-                object obj = ResourceManager.GetObject("Items1", resourceCulture);
+                object obj = ResourceManager.GetObject("Clock", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace DropTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Items2 {
+        internal static System.Drawing.Bitmap Count0 {
             get {
-                object obj = ResourceManager.GetObject("Items2", resourceCulture);
+                object obj = ResourceManager.GetObject("Count0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace DropTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Items3 {
+        internal static System.Drawing.Bitmap Count1 {
             get {
-                object obj = ResourceManager.GetObject("Items3", resourceCulture);
+                object obj = ResourceManager.GetObject("Count1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace DropTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Items4 {
+        internal static System.Drawing.Bitmap Count10 {
             get {
-                object obj = ResourceManager.GetObject("Items4", resourceCulture);
+                object obj = ResourceManager.GetObject("Count10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace DropTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Items5 {
+        internal static System.Drawing.Bitmap Count11 {
             get {
-                object obj = ResourceManager.GetObject("Items5", resourceCulture);
+                object obj = ResourceManager.GetObject("Count11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace DropTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Items6 {
+        internal static System.Drawing.Bitmap Count12 {
             get {
-                object obj = ResourceManager.GetObject("Items6", resourceCulture);
+                object obj = ResourceManager.GetObject("Count12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace DropTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Items7 {
+        internal static System.Drawing.Bitmap Count13 {
             get {
-                object obj = ResourceManager.GetObject("Items7", resourceCulture);
+                object obj = ResourceManager.GetObject("Count13", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace DropTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Items8 {
+        internal static System.Drawing.Bitmap Count14 {
             get {
-                object obj = ResourceManager.GetObject("Items8", resourceCulture);
+                object obj = ResourceManager.GetObject("Count14", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,20 +153,210 @@ namespace DropTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Items9 {
+        internal static System.Drawing.Bitmap Count15 {
             get {
-                object obj = ResourceManager.GetObject("Items9", resourceCulture);
+                object obj = ResourceManager.GetObject("Count15", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] RCZeldaFont {
+        internal static System.Drawing.Bitmap Count2 {
             get {
-                object obj = ResourceManager.GetObject("RCZeldaFont", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("Count2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Count3 {
+            get {
+                object obj = ResourceManager.GetObject("Count3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Count4 {
+            get {
+                object obj = ResourceManager.GetObject("Count4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Count5 {
+            get {
+                object obj = ResourceManager.GetObject("Count5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Count6 {
+            get {
+                object obj = ResourceManager.GetObject("Count6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Count7 {
+            get {
+                object obj = ResourceManager.GetObject("Count7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Count8 {
+            get {
+                object obj = ResourceManager.GetObject("Count8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Count9 {
+            get {
+                object obj = ResourceManager.GetObject("Count9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CountX {
+            get {
+                object obj = ResourceManager.GetObject("CountX", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fairy {
+            get {
+                object obj = ResourceManager.GetObject("Fairy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FiveRupee {
+            get {
+                object obj = ResourceManager.GetObject("FiveRupee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GroupB {
+            get {
+                object obj = ResourceManager.GetObject("GroupB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GroupH {
+            get {
+                object obj = ResourceManager.GetObject("GroupH", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GroupP {
+            get {
+                object obj = ResourceManager.GetObject("GroupP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GroupR {
+            get {
+                object obj = ResourceManager.GetObject("GroupR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HeaderFairy {
+            get {
+                object obj = ResourceManager.GetObject("HeaderFairy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HeaderGlobal {
+            get {
+                object obj = ResourceManager.GetObject("HeaderGlobal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HeaderStreak {
+            get {
+                object obj = ResourceManager.GetObject("HeaderStreak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Heart {
+            get {
+                object obj = ResourceManager.GetObject("Heart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rupee {
+            get {
+                object obj = ResourceManager.GetObject("Rupee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

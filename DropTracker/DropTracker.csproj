@@ -85,16 +85,36 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\0.png" />
-    <None Include="Data\1.png" />
-    <None Include="Data\2.png" />
-    <None Include="Data\3.png" />
-    <None Include="Data\4.png" />
-    <None Include="Data\5.png" />
-    <None Include="Data\6.png" />
-    <None Include="Data\7.png" />
-    <None Include="Data\8.png" />
-    <None Include="Data\9.png" />
+    <None Include="Data\bomb.png" />
+    <None Include="Data\clock.png" />
+    <None Include="Data\fairy.png" />
+    <None Include="Data\five_rupee.png" />
+    <None Include="Data\heart.png" />
+    <None Include="Data\rupee.png" />
+    <None Include="Data\b.png" />
+    <None Include="Data\h.png" />
+    <None Include="Data\p.png" />
+    <None Include="Data\r.png" />
+    <None Include="Data\header_fairy.png" />
+    <None Include="Data\header_global.png" />
+    <None Include="Data\header_streak.png" />
+    <None Include="Data\count0.png" />
+    <None Include="Data\count1.png" />
+    <None Include="Data\count2.png" />
+    <None Include="Data\count3.png" />
+    <None Include="Data\count4.png" />
+    <None Include="Data\count5.png" />
+    <None Include="Data\count6.png" />
+    <None Include="Data\count7.png" />
+    <None Include="Data\count8.png" />
+    <None Include="Data\count9.png" />
+    <None Include="Data\count10.png" />
+    <None Include="Data\count11.png" />
+    <None Include="Data\count12.png" />
+    <None Include="Data\count13.png" />
+    <None Include="Data\count14.png" />
+    <None Include="Data\count15.png" />
+    <None Include="Data\countX.png" />
     <Content Include="vanilla_tracker_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
